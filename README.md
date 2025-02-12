@@ -25,7 +25,7 @@ similar to `netstat -ntp`
 * list all open ports
 
 ```bash
-~> port list
+~> portlist
 ```
 
 |type|ip_version|local_address|local_port|remote_address|remote_port|state|pid|
@@ -39,7 +39,7 @@ similar to `netstat -ntp`
 * list all open tcp port that are in LISTEN state and using local address 0.0.0.0
 
  ```bash
-~> port list | where state == LISTEN and local_address == 0.0.0.0
+~> portlist | where state == LISTEN and local_address == 0.0.0.0
 ```
 
 |type|ip_version|local_address|local_port|remote_address|remote_port|state|pid|
@@ -53,7 +53,7 @@ similar to `netstat -ntp`
 * get process that is listening on a port
 
 ```bash
-~> port list -t4p
+~> portlist -t4p
 ```
 
 |type|ip_version|local_address|local_port|remote_address|remote_port|state|pid|process_name|cmd|exe_path|process_status|process_user|process_group|process_effective_user|process_effective_group|process_environments|

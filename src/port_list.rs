@@ -150,11 +150,11 @@ impl PluginCommand for PortList {
     type Plugin = PortListPlugin;
 
     fn name(&self) -> &str {
-        "port list"
+        "portlist"
     }
 
     fn signature(&self) -> Signature {
-        Signature::build("port list")
+        Signature::build("portlist")
             .switch(
                 "disable-ipv4",
                 "do not fetch ipv6 connections (ipv6 only)",
